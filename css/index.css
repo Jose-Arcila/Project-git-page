@@ -50,7 +50,11 @@
 
 /*This is the header*/
 
-
+header {
+    background-image: url(../Assets/Photo%20above%20the%20fold.png);
+    height: 680px;;
+    
+}
 
 
 
