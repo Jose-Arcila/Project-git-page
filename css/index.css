@@ -12,6 +12,7 @@
 .nav-container {
     position: fixed;
     width: 80%;
+    z-index: 1;
     
 }
 
@@ -92,7 +93,7 @@ header {
 
 /* this is the underheader's styles */
 
-/*these are the styles of the stadistics container*/
+/*---these are the styles of the stadistics container---*/
 
 #get-ahead {
     display: flex;
@@ -116,6 +117,70 @@ header {
     margin-bottom: 20px;
 }
 
+/*------Actual stadistics information------*/
+
+#stadistics-container {
+    display: block;
+    width: 80%;
+    margin: 0% auto 5%  auto;
+    color: #324063
+    
+}
+
+#stadistic-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    
+}
+
+.sta-box {
+    border: 1px solid;
+    padding: 2% 5%;
+    display: flex;
+    border-radius: 10px;
+    min-width: 10vw;
+    max-width: 10vw;
+    color: #324063;
+    border-bottom: 20px solid;
+    border
+}
+
+    
+
+#stadistic-boxes img {
+    margin-left: -20px;
+    margin-right: 35px;
+    width: 30%
+    
+}
+
+.sta-box h1 {
+    font-size: 370%;
+    
+}
+
+.sta-box h3 {
+    float: right;
+}
+
+/*--------- individual border colors ---------*/
+
+.con-one {
+    border-bottom-color: #6061e4;
+}
+
+.con-two {
+    border-bottom-color: #9090e3;
+}
+
+.con-three {
+    border-bottom-color: #B1EFEA;
+}
+
+.con-four {
+    border-bottom-color: #90eee7;
+}
 
 
 
