@@ -90,6 +90,32 @@ header {
     border-color: #6161E8;
 }
 
+/* this is the underheader's styles */
+
+/*these are the styles of the stadistics container*/
+
+#get-ahead {
+    display: flex;
+}
+
+#get-ahead img{
+    transform: translate(0, -15%);
+    
+}
+
+#text-ahead {
+    margin: 5% 0 0 8%; 
+    width: 30%;
+    color: #324063;
+    
+}
+
+#text-ahead h1{
+    font-size: 300%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
 
 
 
