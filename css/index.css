@@ -1,0 +1,70 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*nav styles */
+
+.nav-container {
+    position: fixed;
+    width: 80%;
+    
+}
+
+.nav-button {
+    font-family: Avenir Next;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size: 1vw
+    
+}
+
+.flexbetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 11%
+    
+}
+
+.simple-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 5vw;
+    align-items: center;
+    
+}
+
+.normal-button {
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 10px 30px;
+    border-radius: 10px;
+    
+}
+
+/*This is the header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
