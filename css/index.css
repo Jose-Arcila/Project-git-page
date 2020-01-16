@@ -135,7 +135,8 @@ header {
     font-size: 120%;
     color: white;
     background-color: #6161E8;
-    border-color: #6161E8;
+    border-color: transparent;
+    border-radius: 10px;
 }
 
 /* this is the underheader's styles */
