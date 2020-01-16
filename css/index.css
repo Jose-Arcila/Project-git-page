@@ -392,7 +392,50 @@ header {
 
 }
 
+/* Video container and player */
 
+.video {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    height: 700px;
+    margin-top: 4%;
+    padding: 1%;
+}
+
+.video .video-player {
+    width: 75%;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 10px 5px lightgrey;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+
+}
+
+/* Play BUtton */
+
+.display-video {
+    width: 8%;
+    display: block;
+    margin: auto;
+    margin-top: -24%;
+    transition-duration: 0.5s;
+
+}
+
+.display-video:hover {
+    width: 8.5%;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+}
+
+.display-video:active {
+    width: 8%;
+    transition-duration: 0.1s;
+
+}
 
 
 
