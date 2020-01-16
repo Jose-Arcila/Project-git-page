@@ -558,7 +558,73 @@ form .submit {
     margin-top: 15%;
 }
 
+/*Footer styles */
 
+footer {
+    height: 1000px;
+    background-color: #faf9fc;
+
+}
+
+footer .footer-empty {
+    height: 30vw;
+}
+
+hr {
+    margin: auto 15% auto 15%;
+
+}
+
+/*Footer Links*/
+
+.footer-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    width: 75%;
+    margin-top: 3%;
+    margin-left: 13.5%
+
+}
+
+.link-holder {
+    display: grid;
+    line-height: 30px;
+    justify-content: space-around;
+    font-size: 90%;
+}
+
+.link-holder bold {
+    font-size: ;
+    color: #324062;
+    font-size: 120%;
+    margin-bottom: 17%;
+    font-weight: 600;
+
+}
+
+.link-holder a {
+    text-decoration: none;
+    color: #324062;
+}
+
+.footer-buttonholder {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding:
+
+}
+
+.no-button {
+    font-size: 1.4em;
+    padding: 15px 75px;
+    background-color: #faf9fa;
+    border-radius: 6px;
+    color: #695eed;
+    border: none;
+    cursor: pointer;
+
+}
 
 
 
