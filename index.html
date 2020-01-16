@@ -1,179 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/index.css">
-    
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
-  
+
+   <div id="video-popup">
+
+        <h1 id="video-close" onclick="closeVideo()">x</h1>
+
+        <iframe width="820" height="545" src="https://www.youtube.com/embed/lIggfAg5Q2A">
+
+        </iframe>
+
+   </div>
+
    <main>
-   
-       <section class="total-navwrap">
-     
+
+        <section class="total-navwrap">
+
            <div class="topnav-container">
-       
+
                <img src="assets/logo.svg" alt="">
-      
+
                <div class="topnav" >
-                      
+
+                      <a onclick="displayMenu()" class="hamburguer">&#x2630;</a>
+
+                      <a onclick="closeMenu()" class="no-hamburguer">x</a>
+
                       <div class="normal-links">
-                         
+
                           <a href="" class="semi-button">Get Started</a>
                           <a href="#products" class="purple-letters nav-link" >Products</a>
                           <a href="#pricing" class="nav-link">Pricing</a>
                           <a href="#solutions" class="nav-link">Solutions</a>
                           <a href="#demo" class="nav-link">Demo</a>
                           <a href="" class="nav-link">Services</a>
-                                
+
                       </div>
-               </div> 
-       
-           </div>
-       
-       </section>
-       
-       <header>
-           
-           <div id="header-text">
-              
-              <h1 class="purple">HR Software</h1> <br> <h1>That really matters</h1>
-              
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi ex labore vel libero excepturi dolor beatae, voluptas dolorum alias totam id harum necessitatibus ipsa hic, temporibus adipisci molestiae recusandae, perferendis sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, eligendi Lorem ipsum dolor sit amet.</p>
-              
-              <button class="normal-button purple-button ">Get Started</button>
+               </div>
 
            </div>
-           
-       </header>
-       
-       <!-- from here on, everything is divided in it's own sections -->
-       
-       <section id="under-header">
-           
-           <div id="laptop-stadistics">
-               
-               <div id="get-ahead">
-                   
-                   <img src="/Assets/room-GkWrEPTyDRs-unsplash.png" alt="">
-                   
-                   <div id="text-ahead">
-                       
-                       <h1>Get ahead <br> of the curve</h1>
-                       
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, molestias sapiente quasi, veniam ipsam dicta beatae deleniti, necessitatibus velit officia animi quia. Et vero expedita nesciunt molestias iure! Fugiat, magnam sint maxime at et, perferendis amet alias quod nemo illo cumque tenetur ipsa explicabo veritatis.</p>
-                       
-                   </div>
-                   
-               </div>
-               
-               <div id="stadistics-container">
-                  
-                  <h3>Based on data from:</h3>
-                   
-                  <div id="stadistic-boxes">
-                      
-                      <div class="sta-box con-one">
-                         
-                          <img src="/Assets/Icon_TICKETS.svg" alt="">
-                          
-                          <div class="box-text ">
-                              
-                              <h1>200</h1>
-                              
-                              <h3>TICKETS</h3>
-                              
-                          </div>
-                          
-                      </div>
-                      
-                      <div class="sta-box con-two">
-                         
-                          <img src="/Assets/Icon_CUSTOMERS.svg" alt="">
-                          
-                          <div class="box-text">
-                              
-                              <h1>320M</h1>
-                              
-                              <h3>CUSTOMERS</h3>
-                              
-                          </div>
-                          
-                      </div>
-                      
-                      <div class="sta-box con-three">
-                         
-                          <img src="/Assets/icon_AGENTS.svg" alt="">
-                          
-                          <div class="box-text">
-                              
-                              <h1>320M</h1>
-                              
-                              <h3>AGENTS</h3>
-                              
-                          </div>
-                          
-                      </div>
-                      
-                      <div class="sta-box con-four">
-                         
-                          <img src="/Assets/icon_CUSTOMERS%202.svg" alt="">
-                          
-                          <div class="box-text">
-                              
-                              <h1>320</h1>
-                              
-                              <h3>CUSTOMERS</h3>
-                              
-                          </div>
-                          
-                      </div>
-                      
-                  </div>
-                   
-               </div>
-               
-           </div>
-           
+
        </section>
-       
-       <section class="stand">
-             
+
+       <header>
+
+           <div class="text-title">
+
+               <h1><strong>HR Software</strong> <br> that really matters</h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex illo corporis, explicabo unde, voluptatum officiis, quis laboriosam laborum animi libero nisi consequuntur! Consequuntur earum, voluptatem distinctio deserunt illum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, saepe.</p>
+
+               <button class="purp-button">Get Started</button>
+
+           </div>
+
+       </header>
+
+       <!-- This is everything under the header -->
+
+       <div class="under-container">
+
+           <div class="underheader">
+
+              <img src="assets/room-GkWrEPTyDRs-unsplash.png" alt="Sit-Laptop" class="laptop-underheader-image" width="80%">
+
+              <div class="photo-side">
+
+                  <h1>Get ahead of <br>the curve</h1>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod sint eius laborum repellat totam labore, facere esse laboriosam cumque deleniti dolorum. Deleniti, perspiciatis. Omnis magni, possimus, eaque impedit non velit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, odio.</p>
+
+               </div>
+
+           </div>
+
+           <!-- Presentation of data from customers and clients -->
+
+            <h1 id="base-data">Based on data from:</h1>
+
+            <div id="presentation">
+
+               <div class="stadistics">
+
+                  <div class="stadistics-container con-one">
+
+                     <div class="stadistics-text">
+
+                         <img src="assets/Icon_TICKETS.svg" alt="">
+
+                         <div class="stadistics-text-container">
+
+                             <h1>200</h1><h3>tickets</h3>
+
+                         </div>
+
+                     </div>
+
+                  </div>
+
+                  <div class="stadistics-container con-two">
+
+                     <div class="stadistics-text">
+
+                         <img src="assets/Icon_CUSTOMERS.svg" alt="">
+
+                         <div class="stadistics-text-container">
+
+                             <h1>320M</h1><h3>customers</h3>
+
+                         </div>
+
+                     </div>
+
+                  </div>
+
+                  <div class="stadistics-container con-three">
+
+                     <div class="stadistics-text">
+
+                         <img src="assets/icon_AGENTS.svg" alt="">
+
+                         <div class="stadistics-text-container">
+
+                             <h1>320M</h1><h3>agents</h3>
+
+                         </div>
+
+                     </div>
+
+                  </div>
+
+                  <div class="stadistics-container con-four">
+
+                     <div class="stadistics-text">
+
+                         <img src="assets/icon_CUSTOMERS%202.svg" alt="">
+
+                         <div class="stadistics-text-container">
+
+                             <h1>320</h1><h3>customers</h3>
+
+                         </div>
+
+                     </div>
+
+                  </div>
+
+               </div>
+
+           </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+           <!-- here starts the industry searchbar section -->
+
+           <section class="stand">
+
               <!-- text -->
-              
+
               <div class="text-above">
-               
+
                   <h1>See where you stand</h1>
-               
+
                   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet saepe animi iusto esse fuga! Voluptas, doloribus, nisi.</h3>
-               
-              </div>  
-              
+
+              </div>
+
               <!-- searchbar -->
-              
+
               <div class="searchbar-container">
-                  
+
                   <p>Industry</p>
-                  
+
                   <div class="searchbar">
-                     
-                      <img src="Assets/close%20icon%202.png" alt="no">
-                      
-                      <input type="text" placeholder="Select" onclick="dropdownSearchbar()">
+
+                      <img src="assets/close%20icon%202.png" alt="">
+
+                      <input type="text" placeholder="Select" onclick="dropdown()" id="search-one">
                       
                   </div>
-                  
-              </div>
-              
-              <div id="dropdown">
+
+                  <div id="dropdown">
 
                       <div class="searchbar">
 
                               <img src="assets/close%20icon%202.png" alt="">
 
-                              <input type="text" placeholder="Select" onclick="dropdownClose()">
+                              <input type="text" placeholder="Select" onclick="closeDropdown()">
                       </div>
 
                       <div class="dropdown-search dropdown-button">
@@ -218,11 +244,13 @@
 
                       </div>
 
-                  </div>          
-               
+                  </div>
+
+              </div>
+
            </section>
-           
-            <section id="research-learn">
+
+           <section id="research-learn">
 
                <div class="text-above">
 
@@ -236,7 +264,7 @@
 
                    <div class="empty"></div>
 
-                   <div class="research-box one-one">
+                   <div class="research-box numba-one">
 
                        <h1>Learn from our <br>research</h1>
 
@@ -248,7 +276,7 @@
 
                    </div>
 
-                   <div class="research-box two-two">
+                   <div class="research-box numba-two">
 
 
                        <h1>Learn from our <br>research</h1>
@@ -261,7 +289,7 @@
 
                    </div>
 
-                   <div class="research-box two-two">
+                   <div class="research-box numba-three">
 
 
                        <h1>Learn from our <br>research</h1>
@@ -274,7 +302,7 @@
 
                    </div>
 
-                   <div class="empty"></div>
+                   <div  class="empty"></div>
 
                </div>
 
@@ -287,7 +315,7 @@
                </div>
 
            </section>
-           
+
            <section class="video-holder">
 
               <div class="text-above">
@@ -307,34 +335,34 @@
               </div>
 
            </section>
-           
-           <section class="contact-map">
 
-             <div id="map-marker">
-                 
+           <section class="contact-map">
+              
+              <div id="map-marker">
+
                  <div id="text-chart">
-                     
+
                      <img src="/Assets/Group%2012.svg" alt="">
-                     
+
                      <div>
-                         
+
                          <h4>FIELDS COURT STATION ROAD</h4>
-                         
+
                          <h5>Epworth DN9 1JZ - United Kingdom Company Reg: 8202467</h5>
-                         
+
                      </div>
-                     
+
                  </div>
-                 
+
                  <div class="surround-circle">
-                     
+
                      <div class="inside-circle"></div>
-                     
+
                  </div>
-                 
+
              </div>
-             
-             <div id="form-container">
+
+              <div id="form-container">
 
                  <div id="form-text">
 
@@ -378,28 +406,26 @@
               </div>
 
            </section>
-      
-   </main>
-   
-   <footer>
 
-           <div class="footer-empty"></div>
+           <footer>
 
-           <hr>
+               <div class="footer-empty"></div>
 
-           <div class="footer-content">
+               <hr>
 
-               <div class="link-holder">
+               <div class="footer-content">
 
-                  <bold>Products</bold>
+                  <div class="link-holder">
 
-                  <a href="">Enterprice</a>
-                  <a href="">Developers</a>
-                  <a href="">iPhone App</a>
+                     <bold>Products</bold>
 
-                </div>
+                     <a href="">Enterprice</a>
+                     <a href="">Developers</a>
+                     <a href="">iPhone App</a>
 
-                <div class="link-holder">
+                  </div>
+
+                  <div class="link-holder">
 
                      <bold>Placing</bold>
 
@@ -407,9 +433,9 @@
                      <a href="">After Effects</a>
                      <a href="">Final Cut Pro</a>
 
-                </div>
+                  </div>
 
-                <div class="link-holder">
+                  <div class="link-holder">
 
                      <bold>Solutions</bold>
 
@@ -417,9 +443,9 @@
                      <a href="">Blog</a>
                      <a href="">Swag Store</a>
 
-                </div>
+                  </div>
 
-                <div class="link-holder">
+                  <div class="link-holder">
 
                      <bold>Demo</bold>
 
@@ -427,9 +453,9 @@
                      <a href="">Contact Us</a>
                      <a href="">Status Page</a>
 
-                </div>
+                  </div>
 
-                <div class="link-holder">
+                  <div class="link-holder">
 
                      <bold>Services</bold>
 
@@ -437,103 +463,133 @@
                      <a href="">Customers</a>
                      <a href="">Sla</a>
 
-                </div>
+                  </div>
 
-           </div>
+               </div>
 
-           <div class="footer-buttonholder">
+               <div class="footer-buttonholder">
 
-                <button class="no-button">Login</button>
+                      <button class="no-button">Login</button>
 
-                <button class="purple-button normal-button">Get Started</button>
+                      <button class="purp-button">Get Started</button>
 
-           </div>
+                  </div>
 
-           <div class="final-footer">
+               <div class="final-footer">
 
-                <div class="footer-rights">
+                   <div class="footer-rights">
 
-                    <p>HardRight.io, Inc.</p>
+                       <p>HardRight.io, Inc.</p>
 
-                    <a href="">Terms</a>
+                       <a href="">Terms</a>
 
-                    <a href="">Privacy</a>
+                       <a href="">Privacy</a>
 
-                </div>
+                   </div>
 
-                <div class="footer-logo">
+                   <div class="footer-logo">
 
-                    <img src="assets/Group%2012.svg" alt="">
+                       <img src="assets/Group%2012.svg" alt="">
 
-                </div>
-                
-                <div class="icon-holder">
+                   </div>
 
-                       <a href="https://es-la.facebook.com"><img src="assets/Facebook.svg" alt=""></a>
+                   <div class="icon-holder">
 
-                       <a href="https://twitter.com/login?lang=es"><img src="assets/twitter.svg" alt=""></a>
+                       <a href="facebook.com"><img src="assets/Facebook.svg" alt=""></a>
 
-                       <a href="https://www.youtube.com/"><img src="assets/Youtube.svg" alt=""></a>
+                       <a href="twitter.com"><img src="assets/twitter.svg" alt=""></a>
 
-                       <a href="https://co.pinterest.com/"><img src="assets/Pinteres.svg" alt=""></a>
+                       <a href="youtube.com"><img src="assets/Youtube.svg" alt=""></a>
 
-                       <a href="https://co.linkedin.com/"><img src="assets/In.svg" alt=""></a>
+                       <a href="pinterest.com"><img src="assets/Pinteres.svg" alt=""></a>
 
-                 </div>
+                       <a href="linkedin.com"><img src="assets/In.svg" alt=""></a>
 
-           </div>
-               
+                   </div>
 
-    </footer>
-    
-</body>
+               </div>
 
-<script>
-    
+           </footer>
+
+
+       </div>
+
+   </main>
+
+   <script>
+
+    function dropdown() {
+        document.getElementById('dropdown').style.display = "block";
+        document.getElementById("search-one").style.display = "none";
+
+    }
+
+    function closeDropdown() {
+        document.getElementById('dropdown').style.display = 'none';
+        document.getElementById("search-one").style.display = "block";
+
+        
+    }
+
+    function openVideo(){
+        document.getElementById('video-popup').style.display = 'block';
+
+    }
+
+    function closeVideo() {
+        document.getElementById('video-popup').style.display = 'none';
+
+    }
+
+    function transformNav() {
+        $('#topnav').addClass('white');
+        $('#topnav').removeClass
+
+    }
+
     window.onscroll = function() {myFunction()};
 
     function myFunction() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-            
-    document.querySelector(".total-navwrap").classList.add("white"); 
+
+    document.querySelector(".total-navwrap").classList.add("white");
     document.querySelector('.topnav').classList.add("purple-letters");
-    document.querySelector("img").src = "assets/Logo_Fixed Header.svg"
-        
+
         }
-            
+
             else {
             document.querySelector(".total-navwrap").classList.remove("white");
             document.querySelector('.topnav').classList.remove("purple-letters");
-            document.querySelector("img").src = "assets/Logo.svg"
-                
-        }
-        
-    }
-    
-    //this is the function for the dropdown
-    
-    function dropdownSearchbar() {
-        if (document.getElementById("dropdown").style.display = "none") {
-            document.getElementById("dropdown").style.display = "inline"; 
-            document.querySelector(".searchbar").style.display = "none";
-            
-        }
-        
-        else {
-            document.getElementById("dropdown").style.display = "none"; 
-            document.querySelector(".searchbar").style.display = "block";
-            
-        }
-        
-    }
-    
-    function dropdownClose() {
-            document.getElementById("dropdown").style.display = "none"; 
-            document.querySelector(".searchbar").style.display = "block";
 
-        
+        }
+
     }
-    
-</script>
+
+       //-----I am tired, this one is the hamburger display-----//
+
+       function displayMenu() {
+         document.querySelector(".total-navwrap").classList.add("total-navwrapo");
+         document.querySelector(".hamburguer").style.display="none";
+         document.querySelector(".no-hamburguer").style.display="block";
+       }
+
+       function closeMenu() {
+         document.querySelector(".total-navwrap").classList.remove("total-navwrapo");
+         document.querySelector(".hamburguer").style.display="block";
+         document.querySelector(".no-hamburguer").style.display="none";
+
+       }
+
+       // -----Page pop-up-----
+
+       setInterval(function(){
+           document.querySelector("body").style.display = 'block';
+
+       }, 1100);
+
+
+   </script>
+
+</body>
 
 </html>
