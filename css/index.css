@@ -434,7 +434,58 @@ header {
 .display-video:active {
     width: 8%;
     transition-duration: 0.1s;
+    
+    
+}
 
+/* Map Container and Contact*/
+
+.contact-map {
+    height: 1000px;
+    background-image: url(../assets/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3%;
+
+}
+
+/*---Map marker---*/
+
+#map-marker {
+    margin: auto;
+    width: 400px;
+    padding-top: 5vw
+    
+}
+
+#text-chart {
+    display: flex;
+    background-color: white;
+    padding: 4% 7%;;
+    box-shadow: 0px 0px 5px lightgrey;
+    border-radius: 10px;
+}
+
+#text-chart img {
+    padding-right: 20px;
+}
+
+.surround-circle {
+    border: 1px #324062 solid;
+    width: 2vw;
+    margin: 1vw auto 0 auto;
+    height: 2vw;
+    border-radius: 100%; 
+    
+}
+
+.inside-circle {
+    background-color: #6161E8;
+    width: 1.6vw;
+    height: 1.6vw;
+    margin: 0.2vw auto;
+    border-radius: 100%;
+    
 }
 
 
