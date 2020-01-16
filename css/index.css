@@ -9,45 +9,91 @@
 
 /*nav styles */
 
-.nav-container {
+.total-navwrap {
     position: fixed;
-    width: 80%;
     z-index: 1;
-    
+    width: 100%;
+    margin: 0 auto;
+    transition-duration: 0.3s;
+    height: 6.2em;
+    -webkit-animation-name: appear;
+    -webkit-animation-duration: 2s;
+    animation-name: appear;
+    animation-duration: 2s
+
 }
 
-.nav-button {
-    font-family: Avenir Next;
-    font-weight: 500;
-    text-decoration: none;
-    color: white;
-    font-size: 1vw
-    
-}
-
-.flexbetween {
+.topnav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2% 11%
-    
+    width: 80%;
+    margin: 0 auto;
+
 }
 
-.simple-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
-    grid-column-gap: 5vw;
-    align-items: center;
-    
+.topnav {
+
+    background-color: none;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    margin: 25px 0px 0px auto;
+    transition-duration: 0.3s;
+
 }
 
-.normal-button {
+.white {
+    background-color: white;
+    transition-duration: 0.3s;
+    height: 6.2em
+
+}
+
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition-duration: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    transition-duration: 0.3s;
+
+}
+
+.topnav a:active {
+    background-color: #324062;
+    color: white;
+}
+
+.semi-button {
     border: 1px solid white;
-    background-color: transparent;
-    font-size: 1vw;
-    padding: 10px 30px;
-    border-radius: 10px;
-    
+    border-radius: 8px;
+
+}
+
+.purple-letters a{
+    color: #324062;
+    transition-duration: 0.3s;
+}
+
+.purple-letters .semi-button{
+    border: 1px solid #695eed;
+    color: #695eed
+
+}
+
+.purple-letters .semi-button:hover{
+    border: 1px solid #695eed;
+    color: white;
+    background-color: #695eed;
+
 }
 
 /*This is the header*/
@@ -156,12 +202,13 @@ header {
 }
 
 .sta-box h1 {
-    font-size: 370%;
+    font-size: 3vw;
     
 }
 
 .sta-box h3 {
     float: right;
+    font-size: 1.2vw
 }
 
 /*--------- individual border colors ---------*/

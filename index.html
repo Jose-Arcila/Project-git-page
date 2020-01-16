@@ -11,22 +11,29 @@
   
    <main>
    
-       <div class="flexbetween nav-container">
+       <section class="total-navwrap">
+     
+           <div class="topnav-container">
+       
+               <img src="assets/logo.svg" alt="">
       
-           <img src="/Assets/logo.svg" alt="">
+               <div class="topnav" >
+                      
+                      <div class="normal-links">
+                         
+                          <a href="" class="semi-button">Get Started</a>
+                          <a href="#products" class="purple-letters nav-link" >Products</a>
+                          <a href="#pricing" class="nav-link">Pricing</a>
+                          <a href="#solutions" class="nav-link">Solutions</a>
+                          <a href="#demo" class="nav-link">Demo</a>
+                          <a href="" class="nav-link">Services</a>
+                                
+                      </div>
+               </div> 
        
-           <nav class="simple-grid">
-         
-               <a href="" class="nav-button">Products</a>
-               <a href="" class="nav-button">Pricing</a>
-               <a href="" class="nav-button">Solutions</a>
-               <a href="" class="nav-button">Demo</a>
-               <a href="" class="nav-button">Services</a>
-               <button class="normal-button nav-button">Get Started</button>        
-          
-           </nav>
+           </div>
        
-       </div>
+       </section>
        
        <header>
            
@@ -135,5 +142,30 @@
    </main>
     
 </body>
+
+<script>
+    
+        window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+            
+    document.querySelector(".total-navwrap").classList.add("white"); 
+    document.querySelector('.topnav').classList.add("purple-letters");
+    document.querySelector("img").src = "assets/Logo_Fixed Header.svg"
+        
+        }
+            
+            else {
+            document.querySelector(".total-navwrap").classList.remove("white");
+            document.querySelector('.topnav').classList.remove("purple-letters");
+            document.querySelector("img").src = "assets/Logo.svg"
+                
+        }
+        
+    }
+    
+    
+</script>
 
 </html>
