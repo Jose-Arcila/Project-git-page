@@ -161,11 +161,64 @@
                      
                       <img src="Assets/close%20icon%202.png" alt="no">
                       
-                      <input type="text" placeholder="Select" id="the-search-one">
+                      <input type="text" placeholder="Select" onclick="dropdownSearchbar()">
                       
                   </div>
                   
-              </div>          
+              </div>
+              
+              <div id="dropdown">
+
+                      <div class="searchbar">
+
+                              <img src="assets/close%20icon%202.png" alt="">
+
+                              <input type="text" placeholder="Select" onclick="dropdownClose()">
+                      </div>
+
+                      <div class="dropdown-search dropdown-button">
+
+                          <input class="drop-search-un" type="text" placeholder="Search">
+
+                      </div>
+
+                      <div class="dropdown-button">
+
+                          <a>Education</a>
+
+                      </div>
+
+                      <div class="dropdown-button">
+
+                          <a>Energy</a>
+
+                      </div>
+
+                      <div class="dropdown-button">
+
+                          <a>Entertainment and Gaming</a>
+
+                      </div>
+
+                      <div class="dropdown-button">
+
+                          <a>Financial Services</a>
+
+                      </div>
+
+                      <div class="dropdown-button">
+
+                          <a>Governmnet and non-profit</a>
+
+                      </div>
+
+                      <div class="dropdown-button">
+
+                          <a>Healthcare</a>
+
+                      </div>
+
+                  </div>          
                
            </section>
       
@@ -175,7 +228,7 @@
 
 <script>
     
-        window.onscroll = function() {myFunction()};
+    window.onscroll = function() {myFunction()};
 
     function myFunction() {
     if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
@@ -195,6 +248,29 @@
         
     }
     
+    //this is the function for the dropdown
+    
+    function dropdownSearchbar() {
+        if (document.getElementById("dropdown").style.display = "none") {
+            document.getElementById("dropdown").style.display = "inline"; 
+            document.querySelector(".searchbar").style.display = "none";
+            
+        }
+        
+        else {
+            document.getElementById("dropdown").style.display = "none"; 
+            document.querySelector(".searchbar").style.display = "block";
+            
+        }
+        
+    }
+    
+    function dropdownClose() {
+            document.getElementById("dropdown").style.display = "none"; 
+            document.querySelector(".searchbar").style.display = "block";
+
+        
+    }
     
 </script>
 
